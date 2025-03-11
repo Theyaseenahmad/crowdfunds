@@ -13,7 +13,7 @@ const Navbtn =  () => {
     
 
   //@ts-ignore
-  let name = session?.user?.username || session?.user?.name
+  let name = session?.user?.username || decodeURIComponent(session?.user?.name)
 
   console.log('name',name)
 
